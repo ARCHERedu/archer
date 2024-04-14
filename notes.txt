@@ -1,0 +1,1 @@
+python manage.py runserver (in archer directory)
