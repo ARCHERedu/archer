@@ -1,1 +1,6 @@
 python manage.py runserver (in archer directory)
+
+Migrations: Run Django migrations to create the necessary database tables:
+python manage.py makemigrations
+python manage.py migrate
+
