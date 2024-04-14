@@ -1,0 +1,27 @@
+<!-- myapp/templates/student_form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Form</title>
+    <script>
+        function addStudentForm() {
+            var formContainer = document.getElementById('form-container');
+            var clonedForm = document.querySelector('.student-form').cloneNode(true);
+            formContainer.appendChild(clonedForm);
+        }
+    </script>
+</head>
+<body>
+    <h1>Student Information Form</h1>
+    <div id="form-container">
+        <form class="student-form" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+        </form>
+    </div>
+    <button onclick="addStudentForm()">Add Another Student</button>
+    <input type="submit" form="form-container" value="Submit">
+</body>
+</html>
