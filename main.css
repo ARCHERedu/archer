@@ -1,0 +1,202 @@
+@font-face {
+    font-family:'Gotham Bold';
+    src: 
+        url(/Gotham-font-family/Gotham/Gotham-Bold.otf) format("opentype")
+}
+
+@keyframes bluetowhite {
+    0% {color: #00529B;}
+    100% {color: white;}
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gotham Bold';
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 10 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.blurredbackgroundvideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    -webkit-filter: blur(8px); 
+    filter: blur(8px);
+}
+
+.backgroundvideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .blurredbackgroundvideo{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .blurredbackgroundvideo{
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (min-aspect-ratio: 16/9){
+    .backgroundvideo{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .backgroundvideo{
+        width: auto;
+        height: 100%;
+    }
+}
+
+nav{
+    background-color: white;
+    overflow: hidden;
+    height: 62.5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 100px;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.content{
+    text-align: left;
+}
+
+.content h1{
+    font-size: 50px;
+    color: white;
+    font-weight: 600;
+    line-height: 1em;
+}
+
+.learnmore {
+    display: inline-block;
+    background-color: transparent;
+    font-size: 12px;
+    border: 1px solid white;
+    padding: 5px 20px;
+    border-radius: 50px;
+    margin-top: 20px;
+
+    transition: transform 0.5s ease-in-out;
+}
+
+.learnmore:hover {
+    transform: scale(1.1);
+}
+
+.content a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+#archer{
+    animation: bluetowhite 1s ease-in-out 0.5s 1 normal both;
+}
+
+.footer {
+    /* width: 100%;
+    height: 60vh;
+    background-color: #1F2A32;
+    padding-left: 200px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    position: absolute; */
+
+    background-color:#1F2A32;
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    padding: 20 5%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact h3{
+    color: white;
+    font-size: 25px;
+    
+}
+
+.contact {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.contact ul li{
+    list-style-type: none;
+    position: relative;
+    color:white;
+    margin-left: 370px;
+}
+
+.contact ul li a{
+    text-decoration: none;
+    color:#8F8F8F;
+    font-size: 12px;
+}
+.contactinfo {
+    line-height: 25px;
+}
+
+.pages {
+    line-height: 35px;
+}
+
+hr.one{
+    width: 75%;
+    height: 0.25px;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    margin-top: 325px;
+}
