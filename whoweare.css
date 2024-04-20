@@ -1,0 +1,180 @@
+@font-face {
+    font-family:'Gotham Bold';
+    src: 
+        url(/Gotham-font-family/Gotham/Gotham-Bold.otf) format("opentype"),
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gotham Bold';
+}
+
+.main {
+    
+    width: 100%;
+    height: 6vh;
+    position: relative;
+    padding: 10 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+nav{
+    background-color: white;
+    overflow: hidden;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo{
+    width: 100px;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.team {
+    text-align: left;
+    color: white;
+
+}
+
+.team h1{
+    margin-left: 200px;
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+    margin-top: 100px;
+}
+
+.advisors h3{
+    margin-left: 250px;
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.leadership h3{
+    margin-left: 250px;
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    margin-top: 350px;
+}
+
+.members h3{
+    margin-left: 250px;
+    position: relative;
+    display: inline-block;
+    font-size: 20px; 
+    margin-top: 350px;
+}
+
+.construction h1{
+    margin-top: 350px;
+    color: #243879;
+    text-align: center; 
+}
+.footer {
+    /* width: 100%;
+    height: 60vh;
+    background-color: #1F2A32;
+    padding-left: 200px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    position: absolute; */
+
+    background-color:#1F2A32;
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    padding: 20 5%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer {
+    /* width: 100%;
+    height: 60vh;
+    background-color: #1F2A32;
+    padding-left: 200px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    position: absolute; */
+
+    background-color:#1F2A32;
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    padding: 20 5%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contact h3{
+    color: white;
+    font-size: 25px;
+    
+}
+
+.contact {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+.contact ul li{
+    list-style-type: none;
+    position: relative;
+    color:white;
+    margin-left: 370px;
+}
+
+.contact ul li a{
+    text-decoration: none;
+    color:#8F8F8F;
+    font-size: 12px;
+}
+.contactinfo {
+    line-height: 25px;
+}
+
+.pages {
+    line-height: 35px;
+}
+
+hr.one{
+    width: 75%;
+    height: 0.25px;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    margin-top: 325px;
+}
